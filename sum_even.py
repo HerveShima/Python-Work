@@ -5,11 +5,11 @@ b = [int(num) for num in a.split(" ")]
 def con(tw):
     even = 0
     odd = 0
-    for num in tw:
-        if num % 2 == 0:
-            even += num
+    for i in len(tw):
+        if tw[i] % 2 == 0:
+            even += tw[i]
         else:
-            odd += num
-    return (even,odd)
+            odd += tw[i]
+    return (odd,even)
 res = con(b)
 print(res)
