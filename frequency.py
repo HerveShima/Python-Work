@@ -1,11 +1,11 @@
 a = input("Write a sentence: ")
-frequency = {}
+freq = {}
 b = a.lower().replace('.','')
 words = b.split()
 
 for word in words:
-    if word in frequency:
-        frequency[word] += 1
+    if word in freq:
+        freq[word] += 1
     else:
-        frequency[word] = 1
-print(frequency)
+        freq[word] = 1
+print(freq)
